@@ -1,0 +1,92 @@
+.navbar
+    width: 100%
+    line-height: 60px
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+.exitBtn
+    display: none
+
+.btn-navbar
+    width: 40px
+    height: 25px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    cursor: pointer
+    order: 1
+    display: none
+    .btn-bar
+        height: 3px
+        width: 60%
+        background: $color-light
+        transition: .3s all ease-in-out
+
+.clicked .btn-bar:nth-child(1) 
+    transform-origin: center left
+    transform: rotate(42deg)
+.clicked .btn-bar:nth-child(2) 
+    opacity: 0
+.clicked .btn-bar:nth-child(3) 
+    transform-origin: center left
+    transform: rotate(-42deg)         
+.list-links
+        display: flex
+        order: -1
+        justify-content: flex-end
+        align-items: flex-end
+        z-index: 9999
+.links-navbar
+    padding: 10px 20px
+    font-weight: bolder
+    font-size: 18px
+    color: $color-purple-light
+    transition: .6s all ease-in-out
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        bottom: 5px
+        width: 0%
+        margin: 0 15%
+        height: 3px
+        background: $color-pink
+        left: 0
+        transition: .6s all ease-in-out
+        
+.links-navbar:hover:after 
+    width: 70%
+        
+.links-navbar:hover
+    color: $color-pink
+        
+
+@media (max-width:720px)
+    .exitBtn
+        display: block
+    .btn-navbar
+        display: flex
+        padding: 15px
+    .list-links
+        transform: translateX(-101%)
+        position: fixed
+        top: 0
+        left: 0
+        width: 320px
+        height: 100vh
+        background: $color-purple-dark
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        border-right: 3px solid $color-pink
+        transition: .3s all ease-in-out
+    .exitBtn
+        position: absolute
+        top: 15px
+        right: 15px
+        font-size: 3rem
+        transition: .2s all ease-in-out
+        &:hover
+            color: $color-pink
