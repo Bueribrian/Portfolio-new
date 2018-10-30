@@ -37,7 +37,8 @@
         .media-icon
             font-size: 3em
             margin: 0 10px
-            color: $color-black
+            color: gray
+            transition: .3s all ease-in-out
         .fa-github-alt:hover
             color: #fff
         .fa-linkedin-in:hover
@@ -55,6 +56,9 @@
     position: relative
     overflow: hidden
     z-index: 3
+    display: flex
+    justify-content: center
+    align-items: center
 .btn:after
     position: absolute
     content: ''
@@ -62,9 +66,9 @@
     height: 200%
     top: -20px
     left: -50px
-    background: $color-purple-light
+    background: white
     transform: rotate(-45deg)
-    transition: .7s all ease-in-out
+    transition: .7s all 
     filter: blur(20px)
     z-index: -1
 .btn:hover:after
@@ -81,15 +85,12 @@
     position: absolute
     color: $color-purple-light
     font-size: 1.5rem
-    top: 0px
-    left: 0px
     z-index: 1
     animation: rotate 2s infinite linear
 
 @keyframes rotate 
     0%
         transform: rotate(360deg)
-        color: $color-purple-dark
     
 
 
@@ -134,7 +135,6 @@
     .fly-icons
         display: none
     
-
 @media (max-width: 540px)
     .title-header
         font-size: 9rem*0.45
