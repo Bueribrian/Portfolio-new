@@ -1,5 +1,5 @@
 window.onload = function() {
-  
+  preloader.style.display = 'none'
   navBtn.addEventListener("click", btnNavBar);
   exitBtn.addEventListener("click", btnNavBar);
 
@@ -8,7 +8,7 @@ window.onload = function() {
 var navMenu = document.querySelector(".list-links");
 var navBtn = document.querySelector(".btn-navbar");
 var exitBtn = document.querySelector(".exitBtn");
-
+var preloader = document.querySelector('#preloader')
 
 function iconsGenerateCordenates(e) {
   let x = e.clientX
