@@ -386,14 +386,16 @@ section {
 
 .fly-icons .icon {
   position: absolute;
-  color: #5f5aa2;
+  color: #eb5160;
   font-size: 1.5rem;
   z-index: 1;
-  animation: rotate 2s infinite linear; }
+  animation: 3s opacity linear;
+  top: -50%;
+  left: -50%; }
 
-@keyframes rotate {
+@keyframes opacity {
   0% {
-    transform: rotate(360deg); } }
+    opacity: 0; } }
 .go-about {
   position: absolute;
   bottom: 50px;
@@ -488,5 +490,97 @@ section {
     width: 58px;
     height: 58px;
     opacity: 0; } }
+.wrapper-about-and-contact {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  box-sizing: border-box; }
+  .wrapper-about-and-contact .about, .wrapper-about-and-contact .contact {
+    width: 50%;
+    height: 100%;
+    padding: 6rem;
+    box-sizing: border-box; }
+    .wrapper-about-and-contact .about .about-title, .wrapper-about-and-contact .about .contact-title, .wrapper-about-and-contact .contact .about-title, .wrapper-about-and-contact .contact .contact-title {
+      font-size: 3rem;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem; }
+
+.about-subtitle, .contact-subtitle {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  color: gray;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif; }
+
+.color-span {
+  color: #eb5160; }
+
+.about {
+  background: white; }
+  .about .about-description {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 2rem; }
+  .about .about-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .about .about-skills i {
+      font-size: 60px; }
+    .about .about-skills .skill {
+      position: relative;
+      cursor: pointer;
+      box-sizing: border-box;
+      text-align: center; }
+    .about .about-skills .skill:hover .skill-hover {
+      display: block;
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translate(-50%);
+      letter-spacing: 0.5px;
+      font-family: "Anton", sans-serif;
+      animation: 0.3s aparecer linear; }
+    .about .about-skills .skill-hover {
+      display: none;
+      font-size: 15px; }
+
+@keyframes aparecer {
+  0% {
+    bottom: -10px;
+    opacity: 0; } }
+.contact {
+  background: #071013;
+  color: #f1f7ed;
+  font-size: 20px; }
+  .contact .contact-form form label {
+    padding: 0px 15px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif; }
+  .contact .contact-form form label i {
+    margin-left: 10px;
+    color: #eb5160; }
+  .contact .input-box input, .contact .input-box textarea {
+    border: none;
+    border-bottom: 2px solid #f1f7ed;
+    background: transparent;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s all ease-in-out; }
+  .contact .input-box textarea {
+    min-height: 80px; }
+  .contact .input-box input:focus, .contact .input-box textarea:focus, .contact .contact-form .btn:focus {
+    outline: 0px;
+    border-bottom: 2px solid #eb5160; }
+  .contact .contact-form .btn {
+    cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

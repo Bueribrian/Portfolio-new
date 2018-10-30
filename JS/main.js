@@ -12,7 +12,6 @@ window.onload = function() {
   preloader.style.display = 'none'
   navBtn.addEventListener("click", btnNavBar);
   exitBtn.addEventListener("click", btnNavBar);
-
   header.addEventListener('mousemove',iconsGenerateCordenates)
 };
 var navMenu = document.querySelector(".list-links");
