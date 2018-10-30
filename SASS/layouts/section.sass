@@ -1,0 +1,123 @@
+section
+    min-height: 400px
+    background: $color-light
+    font-family: $font-secondary
+
+.container-border
+    border-left: 1px solid rgba(0,0,0,0.1)
+    border-right: 1px solid rgba(0,0,0,0.1)
+    position: relative
+
+.container-border:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 50%
+    width: 1px
+    background: rgba(0,0,0,0.1)
+    height: 100%
+    z-index: 1
+.practicas-wrapper
+    padding: 1rem 2rem
+
+.title-wrapper h2
+    font-size: 4rem
+    margin: 3rem 0
+    text-align: center
+    color: $color-black
+
+.list-practicas-wrapper 
+    display: flex
+    justify-content: center
+.list-practicas-wrapper ul
+    display: flex
+    justify-content: space-between  
+.list-practicas-wrapper ul li
+    margin: 0 1rem
+    font-family: $font-primary
+    letter-spacing: .5px
+    font-size: 20px
+    line-height: 40px
+    cursor: pointer
+.list-practicas-wrapper ul li i
+    font-size: 30px
+
+.selected
+    color: $color-pink
+    
+
+.practicas-box-wrapper
+    margin: 2rem 0
+    width: 100%
+    min-height: 650px
+    background: $color-purple-dark
+    box-sizing: border-box
+    display: flex
+    justify-content: space-around
+    padding: 1rem 0
+    flex-wrap: wrap
+    z-index: 4
+    position: relative
+
+.box
+    width: 48%
+    max-height: 300px
+    position: relative
+    overflow: hidden
+.box-link:hover .box-content,.box-link:hover .box-title,.box-link:hover .box-description,.box-link:hover .box-tags
+    transform: translateY(0%)
+
+.img-box, .box-content
+    position: absolute
+.img-box:hover .box-content
+    transform: translateY(0%)
+.box-content
+    transform: translateY(-100%)
+    width: 100%
+    height: 100%
+    background: $color-light
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    transition: .3s all ease-in-out
+.img-box
+    overflow: hidden
+.img-box, .img-box img
+    width: 100%
+    height: 100%
+
+.box-title
+    font-size: 25px
+    font-weight: 20px
+    font-family: $font-secondary
+    color: $color-pink
+
+.box-description p
+    color: $color-purple-dark
+    font-size: 15px
+    padding: 0px 2rem
+.box-tags h2
+    text-align: center
+    font-size: 18px
+    margin-bottom: 2rem
+
+.box-title,.box-description,.box-tags
+    transform: translateY(-150%) 
+    transition: .5s all ease-in-out
+.box-tags ul 
+    display: flex
+    justify-content: space-around
+    .box-tag-item
+        padding: 1rem
+        background-color: $color-pink
+        border-radius: 5px
+        color: white
+
+@media (max-width:950px)
+    
+
+@media (max-width:720px)
+    .box
+        width: 95%
+        margin: 1rem 0px

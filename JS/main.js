@@ -1,4 +1,5 @@
 window.onload = function() {
+  
   navBtn.addEventListener("click", btnNavBar);
   exitBtn.addEventListener("click", btnNavBar);
 
