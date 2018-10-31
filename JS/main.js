@@ -19,6 +19,7 @@ var navBtn = document.querySelector(".btn-navbar");
 var exitBtn = document.querySelector(".exitBtn");
 var preloader = document.querySelector('#preloader')
 var header = document.querySelector('#header')
+
 function iconsGenerateCordenates(e) {
   let x = e.clientX
   let y = e.clientY

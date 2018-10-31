@@ -37,7 +37,7 @@ main {
   margin: 0;
   padding: 0;
   position: relative;
-  background: url("https://images.pexels.com/photos/414727/pexels-photo-414727.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background: #102542;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -110,7 +110,7 @@ section {
   margin: 2rem 0;
   width: 100%;
   min-height: 450px;
-  background: #2e294e;
+  background: trasparent;
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
@@ -124,7 +124,8 @@ section {
   min-height: 300px;
   position: relative;
   overflow: hidden;
-  margin: 1rem 0px; }
+  margin: 1rem 0px;
+  box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.5); }
 
 .box-link:hover .box-content, .box-link:hover .box-title, .box-link:hover .box-description, .box-link:hover .box-tags {
   transform: translateY(0%); }
