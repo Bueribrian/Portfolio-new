@@ -185,7 +185,7 @@ section {
   display: flex;
   justify-content: space-around; }
   .box-tags ul .box-tag-item {
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #eb5160;
     border-radius: 5px;
     color: white;
@@ -505,7 +505,6 @@ section {
   z-index: 5;
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
   box-sizing: border-box; }
   .wrapper-about-and-contact .about, .wrapper-about-and-contact .contact {
     width: 50%;
@@ -584,11 +583,23 @@ section {
     font-size: 15px;
     transition: 0.3s all ease-in-out; }
   .contact .input-box textarea {
-    min-height: 80px; }
+    min-height: 80px;
+    margin-bottom: 3rem; }
   .contact .input-box input:focus, .contact .input-box textarea:focus, .contact .contact-form .btn:focus {
     outline: 0px;
     border-bottom: 2px solid #eb5160; }
   .contact .contact-form .btn {
     cursor: pointer; }
+
+@media screen and (max-width: 1000px) {
+  .wrapper-about-and-contact {
+    justify-content: space-around; }
+
+  .about, .contact {
+    width: 100% !important;
+    padding: 3rem 2rem !important; }
+
+  .input-box input, .input-box textarea {
+    width: 90% !important; } }
 
 /*# sourceMappingURL=styles.css.map */
