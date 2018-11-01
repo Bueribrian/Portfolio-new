@@ -1,0 +1,26 @@
+{
+  "name": "portolio-crud",
+  "version": "1.0.0",
+  "description": "portfolio con sistema crud para subir los proyectos de forma dinamica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bueribrian/Portfolio-new.git"
+  },
+  "author": "Bueri Brian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bueribrian/Portfolio-new/issues"
+  },
+  "homepage": "https://github.com/Bueribrian/Portfolio-new#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.8",
+    "mongoose-timestamp": "^0.6.0",
+    "nodemon": "^1.18.5"
+  }
+}

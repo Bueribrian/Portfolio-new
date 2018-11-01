@@ -613,7 +613,22 @@ section {
     height: auto; }
 
   .about, .contact {
-    width: 90% !important;
+    width: 80% !important;
+    padding: 3rem 2rem !important; }
+
+  .input-box input, .input-box textarea {
+    width: 90% !important; }
+
+  .about-skills {
+    margin-bottom: 2rem;
+    justify-content: center; } }
+@media screen and (max-width: 720px) {
+  .wrapper-about-and-contact {
+    justify-content: space-around;
+    height: auto; }
+
+  .about, .contact {
+    width: 100% !important;
     padding: 3rem 2rem !important; }
 
   .input-box input, .input-box textarea {
