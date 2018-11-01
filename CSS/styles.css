@@ -66,21 +66,6 @@ section {
   background: #f1f7ed;
   font-family: "Roboto", sans-serif; }
 
-.container-border {
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  position: relative; }
-
-.container-border:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 1px;
-  background: rgba(0, 0, 0, 0.1);
-  height: 100%;
-  z-index: 1; }
-
 .practicas-wrapper {
   padding: 0; }
 
@@ -299,18 +284,19 @@ section {
     left: 0;
     width: 320px;
     height: 100vh;
-    background: #2e294e;
+    background: black;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border-right: 3px solid #eb5160;
+    border-right: 3px solid #f1f7ed;
     transition: 0.3s all ease-in-out; }
 
   .exitBtn {
     position: absolute;
     top: 15px;
     right: 15px;
-    font-size: 3rem;
+    color: white;
+    font-size: 2rem;
     transition: 0.2s all ease-in-out; }
     .exitBtn:hover {
       color: #eb5160; } }
@@ -526,7 +512,7 @@ section {
   .wrapper-about-and-contact .about, .wrapper-about-and-contact .contact {
     width: 50%;
     height: 100%;
-    padding: 6rem;
+    padding: 6rem 6rem 2rem 6rem;
     box-sizing: border-box; }
     .wrapper-about-and-contact .about .about-title, .wrapper-about-and-contact .about .contact-title, .wrapper-about-and-contact .contact .about-title, .wrapper-about-and-contact .contact .contact-title {
       font-size: 3rem;
@@ -623,13 +609,18 @@ section {
 
 @media screen and (max-width: 1000px) {
   .wrapper-about-and-contact {
-    justify-content: space-around; }
+    justify-content: space-around;
+    height: auto; }
 
   .about, .contact {
-    width: 100% !important;
+    width: 90% !important;
     padding: 3rem 2rem !important; }
 
   .input-box input, .input-box textarea {
-    width: 90% !important; } }
+    width: 90% !important; }
+
+  .about-skills {
+    margin-bottom: 2rem;
+    justify-content: center; } }
 
 /*# sourceMappingURL=styles.css.map */
