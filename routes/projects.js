@@ -1,8 +1,10 @@
 const express = require('express')
 const router = express.Router()
 const Project = require('../models/proyect')
+const config = require('../config')
+const jwt = require('express-jwt')
 
-router.get('/',(req,res)=>{
+router.get('/',jwt({secret: config.JWT_SECRET}),(req,res)=>{
     Project.find({},(err,projects) =>{
         res.send(projects)
     })
@@ -17,7 +19,7 @@ router.get('/:id', (req, res) => {
     res.sendStatus(201)
 });
 //AddProyect
-router.post('/',(req,res)=>{
+router.post('/' ,jwt({secret: config.JWT_SECRET}),(req,res)=>{
 
     const { title, imgUrl, tags, description} = req.body
     const project = new Project({
