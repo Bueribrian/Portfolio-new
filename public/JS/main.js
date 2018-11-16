@@ -19,7 +19,7 @@ var navBtn = document.querySelector(".btn-navbar");
 var exitBtn = document.querySelector(".exitBtn");
 var preloader = document.querySelector('#preloader')
 var header = document.querySelector('#header')
-
+ajaxCall()
 // function iconsGenerateCordenates(e) {
 //   let x = e.clientX
 //   let y = e.clientY
@@ -71,4 +71,14 @@ function btnNavBar() {
     ? (navMenu.style.transform = "translateX(-101%)")
     : (navMenu.style.transform = "translateX(0%)");
   navBtn.classList.toggle("clicked");
+}
+
+function ajaxCall(){
+  fetch('http://localhost:3000/projects')
+  .then(function(response){
+    return response.json()
+  })
+  .then(function(myJson){
+    console.log(myJson)
+  })
 }

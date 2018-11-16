@@ -4,5 +4,4 @@ module.exports = {
     URL : process.env.BASE_URL || 'http://localhost:3000',
     MONGODB_URL: process.env.MONGODB_URL ||
     'mongodb://papaguacha:papaguacha4773@ds249233.mlab.com:49233/portfolio-crud',
-    JWT_SECRET: process.env.JWT_SECRET || 'secret1'
 }
