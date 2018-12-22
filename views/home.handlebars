@@ -1,0 +1,253 @@
+<div id="preloader">
+    <div class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<header id="header">
+    <div  id="header-particles" class="header-wrapper">
+        <div class="container">
+            <nav class="navbar">
+                <div class="btn-navbar-wrapper">
+                    <ul class="btn-navbar">
+                        <li class="btn-bar "></li>
+                        <li class="btn-bar "></li>
+                        <li class="btn-bar "></li>
+                    </ul>
+                </div>
+                <ul class="list-links">
+                    <li><a href="#" class="links-navbar">Sobre mi</a></li>
+                    <li><a href="#practicas" id="irProyectos2" class="links-navbar">Practicas</a></li>
+                    <li><a id="contactBtnNav" href="#contact" class="links-navbar">Contactame</a></li>
+                    <div href="#" class="exitBtn"><i class="fas fa-times"></i></div>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div  class="header-info-wrapper">
+            <div class="fly-icons">
+                <i class=" icon icon1  far fa-square"></i>
+                <i class=" icon icon2 far fa-square"></i>
+                <i class=" icon icon3 far fa-square"></i>
+                <i class=" icon icon4 far fa-circle"></i>
+                <i class=" icon icon5 far fa-circle"></i>
+                <i class=" icon icon6 far fa-circle"></i>
+                <i class=" icon icon7 fas fa-atom"></i>
+                <i class=" icon icon8 fas fa-atom"></i>
+                <i class=" icon icon9 fas fa-atom"></i>
+            </div>
+            <div class="container">
+                <h1 class="title-header">
+                    Bueri Brian
+                </h1>
+                <h2 class=" subtitle-header ">
+                    Web developer
+                </h2>
+                <div class="btn-wrapper">
+                    <a id="btnContactHeader" href="#contact" class="btn">Contactame</a>
+                    <a href="ASSETS/web-developer.pdf" class="btn" download="" target="_blank">CV <i class="fas fa-download"></i></a>
+                    <div class="social-media">
+                        <ul class="list-media">
+                            <li><a href="https://github.com/Bueribrian" target="_blank"><i class="fab media-icon fa-github-alt"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/brian-bueri-838845155/" target="_blank"><i class="fab media-icon fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a id="irProyectos" href="#practicas-title" class="go-about">Proyectos</a>
+        </div>
+    </div>
+
+
+
+</header>
+<main id="main">
+    <section id="practicas">
+        <div class="container container-border">
+            <div class="practicas-wrapper">
+                <div id="practicas-title" class="title-wrapper">
+                    <h2>Practicas y projectos</h2>
+                </div>
+                <div class="list-practicas-wrapper">
+                    <ul>
+                        <li class="selected">Todo <i class="fas fa-asterisk"></i></li>
+                        <li>Javascript <i class="fab fa-js    "></i></li>
+                        <li>SASS <i class="fab fa-sass    "></i></li>
+                        <li>HTML5 <i class="fab fa-html5    "></i></li>
+                    </ul>
+                </div>
+                <div class="practicas-box-wrapper">
+
+                    {{!-- Aca van los proyectos con llamado AJAX-JSON --}}
+
+                </div>
+            </div>
+            <div class="about-me-wrapper">
+
+            </div>
+        </div>
+    </section>
+    <section id="about-and-contact">
+        <div class="container container-border">
+            <div class="wrapper-about-and-contact">
+                <div id="exitBtnContact">
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="about">
+                    <div class="about-title">
+                        <h2>Quien soy?</h2>
+                    </div>
+                    <div class="about-subtitle">
+                        <h4>Web developer - full stack.</h4>
+                    </div>
+                    <div class="about-description">
+                        Soy Brian Bueri, tengo 21 años y hago <span class="color-span">Desarrollo web</span>.
+                        Soy un pibe tranquilo que siempre le emociona aprender cosas nuevas, averiguar como
+                        funcionan, arreglarlas y mejorarlas,
+                        trato de crear un balance en <span class="color-span">Diseño y Utilidad</span> abarcando el
+                        lado del front-end como del back-end, al hacer esto termino no siendo muy bueno en alguno
+                        de los dos pero decente en ambos.
+                        Cuando no estoy codeando, estoy haciendo Calistenia, viendo series o saliendo con amigos.
+                    </div>
+                    <div class="about-skills">
+                        <div class="skill"><i class="fab fa-js-square    "></i><span class="skill-hover">Javascript</span></div>
+                        <div class="skill"><i class="fab fa-css3-alt"></i><span class="skill-hover">CSS3</span></i></div>
+                        <div class="skill"><i class="fab fa-node"></i><span class="skill-hover">Node-Express</span></div>
+                        <div class="skill"><i class="fas fa-database"></i><span class="skill-hover">MongoDB</span></div>
+                    </div>
+                </div>
+                <div id="contact" class="contact">
+                    <div class="contact-title">
+                        <h2>Contactame!.</h2>
+                    </div>
+                    <div class="contact-subtitle">
+                        <h4>No dudes en mandarme un mensaje!.</h4>
+                    </div>
+                    <div class="contact-form">
+                        <form action="">
+                            <label for="name">Nombre <i class="fas fa-user    "></i></label>
+                            <div class="input-box">
+                                <input required type="text" name="name" id="name">
+                            </div>
+                            <label for="email">Correo <i class="fas fa-at"></i></label>
+                            <div class="input-box">
+                                <input required type="email" name="email" id="email">
+                            </div>
+                            <label for="message">Mensaje <i class="far fa-envelope"></i></label>
+                            <div class="input-box">
+                                <textarea required name="message" id="message"></textarea>
+                            </div>
+                            <input id="btn-submit-contact" class="btn" type="submit" value="Enviar">
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="skills-section">
+
+    </section>
+</main>
+<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="https://github.com/Bueribrian" target="_blank"><i class="fab media-icon fa-github-alt"></i></a>
+				<a href="https://www.linkedin.com/in/brian-bueri-838845155/" target="_blank"><i class="fab media-icon fa-linkedin-in"></i></a>
+
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="" href="#header"> &#9656; Inicio</a>
+
+					<a href="#practicas"> &#9656; Practicas</a>
+
+				</p>
+
+				<p>Bueri Brian &copy; <span id="date"></span> </p>
+			</div>
+
+		</footer>
+
+<script type="text/javascript">
+const url = '/proyectos/todo'
+fetch(url)
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+
+      // Examine the text in the response
+      response.json().then(function(data) {
+        let proyectos = data
+        console.log(data)
+        let proyectoContainer = document.querySelector('.practicas-box-wrapper')
+
+        proyectos.forEach((proyecto)=>{
+            let output = `<div class="box">
+                        <a href="${proyecto.url}" target="_blank" class="box-link">
+                            <div class="img-box">
+                                <img src="IMAGES/${proyecto.img}" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-title">
+                                    <h2>${proyecto.title}</h2>
+                                </div>
+                                <div class="box-description">
+                                    <p>${proyecto.desc}</p>
+                                </div>
+                                <div class="box-tags">
+                                    <h2>Herramientas</h2>
+                                    <ul>
+                                        <li class="box-tag-item">${proyecto.tags}</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>`
+            proyectoContainer.innerHTML += output
+        })
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+
+const contactBtnNav = document.querySelector('#contactBtnNav')
+const btnContactHeader = document.querySelector('#btnContactHeader')
+const contactDiv = document.querySelector('#about-and-contact')
+const exitBtnContact = document.querySelector('#exitBtnContact')
+
+function exitContact(){
+  contactDiv.style.display='none'
+}
+function appearContact(){
+  contactDiv.style.display='block'
+}
+
+contactBtnNav.addEventListener('click',appearContact)
+exitBtnContact.addEventListener('click',exitContact)
+
+const dateDiv = document.querySelector('#date')
+const date = new Date()
+dateDiv.innerHTML= date.getFullYear()
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
+</script>
+<script type="text/javascript">
+  particlesJS("header-particles", {"particles":{"number":{"value":76,"density":{"enable":true,"value_area":236.74802907265777}},"color":{"value":"#fff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":4,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":2,"direction":"bottom","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+<script src="JS/main.js"></script>

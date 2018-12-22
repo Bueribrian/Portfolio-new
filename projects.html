@@ -10,18 +10,18 @@
     <h1>PROJECTS</h1>
 
     <form action="/projects" method="POST" enctype="multipart/form-data">
-    <input type="text" name="title" id="title">
+    <input type="text" name="title" id="title" placeholder="title">
     <input type="file" name="imgUrl" id="imgUrl">
-    <input type="text" name="tags" id="tags">
-    <input type="text" name="description" id="description">
+    <input type="text" name="tags" id="tags" placeholder="tags">
+    <input type="text" name="description" id="description" placeholder="descripcion">
     <input type="submit" value="enviar">
     </form>
 </body>
 <script>
-    
-    
+
+
 function ajaxCall(){
-    
+
   fetch('http://localhost:3000/projects/projectsGet')
   .then(function(response){
     return response.json()
